@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap');
+
+pre, p {
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 8%;
+    margin-left: 2%;
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+}
+
+#hollow_knight_trailer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #hollow_knight_trailer {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(251, 251, 251, 0.2);
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.dropdown-content a {
+    color: #6e6e6e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 30px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #6e6e6e;} 
+
+body {
+    background-image: url(./Icons/background-hollow-knight-763f8ced__1920_1080__center.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+}
+
+#main_health_and_soul, #main_nail, #maincontact, #nail_art, #spells_and_skills, #main_news {
+    background-color: #313131b5;
+    border-radius: 30px;
+    padding: 16px;
+    margin: 5%;
+    box-shadow: 8px 0px 16px 0px rgba(251, 251, 251, 0.499);
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+
+.formbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+}
+
+.subject, .name, .mail, .message, .form {
+    margin: 1%;
+    /* width: 90%; */
+}
+
+h2, h3, .description {
+    margin: 2%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+h1 {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.whitemask, .bluemask, .shadow, .soul, .nail1, .nail2, .nail3, .nail4, .nail5, .cyclone, .dash, .great {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    margin: 2%;
+    font-size: 18px;
+    line-height: 1.5em
+}
+
+/* #spells_and_skills {
+    display: flex;
+    flex-wrap: wrap;
+    
+} */
+
+.spells, .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+
+.focus, .vengefull, .desolate, .howling, .shade, .descending, .abyss, .mothwing, .mantis, .crystal, .monarch, .isma, .shade_cloak, .dream_nail, .awoken, .world_sense, .dreamgate {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 2%;
+    display: flex;
+    /* flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row; */
+    width: 450px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    padding: 2%;
+    background-color: #313131;
+
+
+}
+
+.whitemask img {
+    margin-left: 12px;
+    margin-top: 40px;
+} 
+
+.shadow img, .soul img {
+    margin-top: 20px;
+}
+
+.focus img, .vengefull img, .desolate img, .howling img, .shade img, .descending img, .abyss img, .mothwing img, .mantis img, .crystal img, .monarch img, .isma img, .shade_cloak img, .dream_nail img, .awoken img, .dreamgate img {
+    
+    margin-top: 30%;
+    margin-left: 10%;
+    width: 50%;
+    height: auto;
+}
+
+.world_sense img {
+    margin-top: 45px;
+}
+
+.nail1, .nail2, .nail3, .nail4, .nail5 {
+    margin-left: 5%;
+}
+
+.cyclone img, .dash img, .great img {
+    margin-top: 20px;
+}
+
+.location, #location_title {
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+#contactboutton {
+    text-decoration: none;
+    color: #a7a7a7;
+    background: #31313100;
+    height: 35px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #fff;
+    overflow: hidden;
+    font-size: 1.5em;
+    font-weight: 700;
+    z-index: 0;
+    position: relative;
+}
+
+#contactboutton::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 50% 50% 0 0;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+#contactboutton:hover::before {
+    top: 0;
+    border-radius: 0;
+}
+
+.footermainpage {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        /* background-color: #313131; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* border-radius: 10px; */
+}
+
+.footerother {
+        /* position: absolute; */
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        background-color: #313131b5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 10px;  
+}
+
+.contactboutton {
+    margin-right: 10px;
+    margin-top: 7px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fansite.css">
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+        <a
+          href="https://www.teamcherry.com.au/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="./Icons/Team_Cherry_Logo_Big.png"
+            alt="Team_Cherry_Logo_Big"
+            width="80px"
+            height="auto"
+        /></a>
+  
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <a href="index.html">Accueil</a>
+            <a href="santé_et_ame.html">Santé et Âme</a>
+            <a href="aiguillon.html">Aiguillon</a>
+            <a href="art_d'aiguillon.html">Art d'aiguillon</a>
+            <a href="sorts_et_capacites.html">Sorts et capacités</a>
+            <a href="news.html">News</a>
+          </div>
+        </div>
+      </header>
+
+    <main id="maincontact">
+        <form action="exemple.php" method="post">
+            <div class="formbox">
+                <div class="subject">
+                    <label for="select">Sujet :</label>
+                    <select name="subject" id="select" required>
+                        <option>Astuce et solution</option>
+                        <option>Amélioration</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+
+                <div class="name">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="user_name" placeholder="Entrez votre nom : " required>
+                </div>
+
+                <div class="mail">
+                    <label for="mail">e-mail&nbsp;:</label>
+                    <input type="email" id="mail" name="user_mail" placeholder="Entre votre mail : " required>
+                </div>
+
+                <div class="message">
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user_message" placeholder="Entrez votre message : " rows="10" cols="80"></textarea>
+                </div>
+                <div class="form_button">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="footerother">
+        <div class="socialnetwork">
+          <a href="https://www.facebook.com/teamcherrygames/" target="_blank" rel="noopener noreferrer"><img src="./Icons/icons8-facebook-50.png" alt="facebook"></a>
+          <a href="https://www.youtube.com/channel/UCZS2K8ZsUmujTuj3cNMyBSA" target="_blank" rel="noopener noreferrer"><img src="./Icons/icons8-émission-de-télévision-50.png" alt="youtube"></a>
+          <a href="http://twitter.com/TeamCherryGames" target="_blank" rel="noopener noreferrer"><img src="./Icons/icons8-logo-twitter-encadré-50.png" alt="twitter"></a>
+        </div>
+  
+        <div class="contactboutton">
+          <a id="contactboutton" href="contact.html">Contact</a>
+        </div>
+      </footer>
+  
+
+  </body>
+</html>
